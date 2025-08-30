@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Inaugural 901 Rally — September 9</title>
+  <style>
+    :root {
+      --bg: #0c0c0d;
+      --card: #ffffff;
+      --ink: #121316;
+      --ink-sub: #4b5563;
+      --accent: #d61f1f; /* classic Porsche red */
+      --muted: #f3f4f6;
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .wrapper { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    .flyer { background: var(--card); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+    .hero { position: relative; height: 460px; background: #000; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.1) contrast(1.05); }
+    .badge { position: absolute; top: 18px; left: 18px; background: rgba(255,255,255,.9); color: var(--ink); padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 14px; letter-spacing: .03em; }
+    .title { position: absolute; bottom: 24px; left: 24px; right: 24px; color: #fff; text-shadow: 0 8px 28px rgba(0,0,0,.6); }
+    .title h1 { margin: 0; font-size: 44px; line-height: 1.05; }
+    .title p { margin: 6px 0 0; font-size: 18px; opacity: .95; }
+
+    .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; padding: 24px; }
+    .card { background: var(--muted); border-radius: 16px; padding: 18px 18px 14px; }
+    .card h3 { margin: 0 0 10px; font-size: 18px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+    .card p, .card li { color: var(--ink); font-size: 15px; line-height: 1.55; }
+    .key { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .chip { background: #fff; border-radius: 12px; padding: 10px 12px; border: 1px solid #e5e7eb; }
+    .chip b { display: block; font-size: 12px; color: var(--ink-sub); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+    .chip span { font-size: 16px; font-weight: 700; }
+
+    .steps ol { margin: 0; padding-left: 18px; }
+    .steps li { margin: 8px 0; }
+
+    .footer { display: flex; gap: 16px; padding: 0 24px 24px; }
+    .note { flex: 2; background: var(--muted); border-radius: 16px; padding: 16px; }
+    .note h4 { margin: 0 0 8px; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+    .contact { flex: 1; background: var(--muted); border-radius: 16px; padding: 16px; }
+
+    a.button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 14px; border-radius: 10px; font-weight: 700; }
+    .buttons { display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+
+    /* Print styles */
+    @media print {
+      body { background: #fff; }
+      .wrapper { padding: 0; }
+      .flyer { box-shadow: none; border-radius: 0; }
+      .hero { height: 280px; }
+      .title h1 { font-size: 32px; }
+      .grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .footer { gap: 12px; }
+      a.button { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="flyer" role="document" aria-label="The 901 Rally Flyer">
+      <div class="hero">
+        <img alt="Lineup of classic Porsche 911s" src="https://www.stuttcars.com/wp-content/uploads/2025/05/Hakone-Japan-Porsche-017.jpg" />
+        <div class="badge">September 9 • The Inaugural 901 Rally</div>
+        <div class="title">
+          <h1>The Inaugural 901 Rally</h1>
+          <p>An early‑morning drive with great roads, coffee stops, and photo ops.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Event details</h3>
+          <div class="key">
+            <div class="chip"><b>Meet & Greet</b><span>7:15 AM</span></div>
+            <div class="chip"><b>Driver Briefing</b><span>8:45 AM</span></div>
+            <div class="chip"><b>Roll‑out</b><span>9:01 AM</span></div>
+            <div class="chip"><b>Distance</b><span>~120 miles</span></div>
+          </div>
+          <p style="margin-top:10px"><strong>Start:</strong> 300 Virginia St — Provisions Restaurant</p>
+          <div class="buttons" aria-label="Quick links">
+            <a class="button" href="https://maps.apple.com/?address=300%20Virginia%20St" target="_blank" rel="noreferrer">Map to Start</a>
+            <a class="button" href="https://maps.google.com/?q=Healdsburg%20Plaza" target="_blank" rel="noreferrer">Finish: Healdsburg Plaza</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick route</h3>
+          <ul>
+            <li>Provisions → <strong>Mare Island</strong> (Mare Island Bridge)</li>
+            <li><strong>Hwy 37 E → Vallejo</strong></li>
+            <li><strong>Columbus Pkwy → Lake Herman Rd</strong> (spirited)</li>
+            <li>Pick: <strong>Goodyear Rd</strong> <em>or</em> <strong>Lopez Rd</strong> (spirited)</li>
+            <li><strong>I‑680 N → I‑80 E</strong> (~10 mi freeway)</li>
+            <li><strong>Lagoon Valley Rd exit → Cherry Ln → Pleasant Valley Rd</strong> (spirited 10–12 mi)</li>
+            <li><strong>Right on Putah Creek Rd → Winters</strong> (break at Steady Eddie’s)</li>
+            <li><strong>Hwy 128 → Lake Berryessa Dam</strong> (photos)</li>
+            <li><strong>128 toward Rutherford</strong> (opt. Turtle Rock bar)</li>
+            <li><strong>Sage Canyon Rd → right on Silverado Trail</strong> (no spirited; cyclists)</li>
+            <li><strong>Calistoga</strong> rest → <strong>CA‑29 → Tubbs Ln (L) → CA‑128 (R)</strong> (spirited)</li>
+            <li><strong>Left on Alexander Valley Rd → Left on Healdsburg Ave → Finish: Healdsburg Plaza</strong></li>
+          </ul>
+        </div>
+
+        <div class="card steps" style="grid-column: 1 / -1;">
+          <h3>Turn‑by‑turn</h3>
+          <ol>
+            <li>Meet at <strong>300 Virginia St (Provisions)</strong>. Arrive 7:15 AM. Roll out 9:01 AM.</li>
+            <li>Head to <strong>Mare Island</strong> via the <strong>Mare Island Bridge</strong>.</li>
+            <li>Take <strong>Hwy 37 East</strong> toward <strong>Vallejo</strong>.</li>
+            <li>Exit <strong>Columbus Pkwy</strong> toward <strong>Lake Herman Rd</strong> (~4 mi) and <strong>turn left</strong> on Lake Herman Rd.</li>
+            <li>Continue ~5 mi on <strong>Lake Herman Rd</strong> — two‑lane, <em>spirited driving</em> 🙂.</li>
+            <li>End of Lake Herman: choose <strong>Goodyear Rd</strong> or <strong>Lopez Rd</strong> (both parallel to the freeway, ~5 mi, <em>spirited</em> 🙂).
+              <ul>
+                <li><strong>If Goodyear:</strong> left on <strong>Marshview Rd</strong>.</li>
+                <li><strong>If Lopez:</strong> road ends → right over the overpass → left onto <strong>I‑680</strong>.</li>
+              </ul>
+            </li>
+            <li>Merge <strong>I‑680 N → I‑80 E (toward Sacramento)</strong> — longest freeway section (~10 mi).</li>
+            <li>Take <strong>Lagoon Valley Rd</strong> exit, <strong>left</strong> over the freeway.</li>
+            <li>Follow <strong>Cherry Ln</strong> (~2 mi).</li>
+            <li><strong>Left</strong> on <strong>Pleasant Valley Rd</strong> — spirited 10–12 mi.</li>
+            <li><strong>Right</strong> on <strong>Putah Creek Rd</strong> → into <strong>Winters</strong>.</li>
+            <li><strong>Break:</strong> <strong>Steady Eddie’s Coffee</strong> — relax & regroup.</li>
+            <li>Leave Winters on <strong>Hwy 128</strong> toward <strong>Lake Berryessa</strong> (~6 mi).</li>
+            <li><strong>Stop:</strong> <strong>Lake Berryessa Dam</strong> — photos, rest, etc.</li>
+            <li>Continue on <strong>Hwy 128</strong>, right toward <strong>Rutherford</strong> (not Napa). Optional: <strong>Turtle Rock</strong>.</li>
+            <li>Take <strong>Sage Canyon Rd</strong> (not “Hope Valley”) toward <strong>Silverado Trail</strong>.</li>
+            <li><strong>Right</strong> on <strong>Silverado Trail</strong> — <strong>no</strong> spirited driving; lots of cyclists (4–5 mi).</li>
+            <li>Enter <strong>Calistoga</strong> — rest stop (Dr. Wilkerson’s backyard).</li>
+            <li>Leave Calistoga on <strong>CA‑29</strong>, <strong>left</strong> on <strong>Tubbs Ln</strong>.</li>
+            <li><strong>Right</strong> on <strong>CA‑128</strong> — <em>spirited</em> 🙂.</li>
+            <li><strong>Left</strong> on <strong>Alexander Valley Rd</strong> → <strong>Left</strong> on <strong>Healdsburg Ave</strong> → <strong>Finish: Healdsburg Plaza</strong>.</li>
+          </ol>
+        </div>
+      </div>      
+      <div class="footer">
+        <div class="note">
+          <h4>Safety & Etiquette</h4>
+          <ul>
+            <li>This is <strong>not a race</strong>. Drive your own pace; regroup at stops.</li>
+            <li>Yield to cyclists and locals; use turnouts to let traffic by.</li>
+            <li>Keep the car behind you in sight; if they fall back, ease up.</li>
+            <li>Arrive fueled up; check tires and fluids. Bring a tire gauge and tow hook.</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4>RSVP & Contact</h4>
+          <p><strong>Organizer:</strong> Rusty Keyes</p>
+          <p style="font-size:12px;color:var(--ink-sub)">By participating you acknowledge you’re operating your vehicle at your own risk and agree to obey all posted laws and local regulations.</p>
+        </div>
+      </div>
+    </section>  
+  </div>
+</body>
+</html>
